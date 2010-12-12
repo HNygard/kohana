@@ -7,7 +7,7 @@
  * @copyright  (c) 2009 Woody Gilk
  * @license    MIT
  */
-abstract class Sprig {
+abstract class Sprig_Core {
 
 	// Model many-to-many relations
 	protected static $_relations;
@@ -144,6 +144,9 @@ abstract class Sprig {
 
 		foreach ($this->_fields as $name => $field)
 		{
+			// Assign this model to the field
+			$field->object = $this;
+
 			if ($field instanceof Sprig_Field_ForeignKey AND ! $field->model)
 			{
 				if ($field instanceof Sprig_Field_HasMany)

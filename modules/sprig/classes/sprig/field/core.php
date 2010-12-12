@@ -7,7 +7,7 @@
  * @copyright  (c) 2009 Woody Gilk
  * @license	   MIT
  */
-abstract class Sprig_Field {
+abstract class Sprig_Field_Core {
 
 	/**
 	 * @var bool Allow `empty()` values to be used. Default is `FALSE`.
@@ -86,6 +86,11 @@ abstract class Sprig_Field {
 	 * @var array {@link Validate} callbacks for this field.
 	 */
 	public $callbacks = array();
+
+	/**
+	 * @var  object  {@link Sprig} model parent
+	 */
+	public $object;
 
 	public function __construct(array $options = NULL)
 	{
