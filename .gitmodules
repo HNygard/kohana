@@ -31,3 +31,6 @@
 [submodule "modules/oauth"]
 	path = modules/oauth
 	url = git://github.com/kohana/oauth.git
+[submodule "modules/pdfview"]
+	path = modules/pdfview
+	url = git://github.com/shadowhand/pdfview.git
