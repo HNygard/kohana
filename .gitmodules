@@ -27,7 +27,7 @@
 	url = git://github.com/kohana/cache.git
 [submodule "modules/unittest"]
 	path = modules/unittest
-	url = git://github.com/kohana/unittest.git
+	url = git@github.com:HNygard/unittest.git
 [submodule "modules/oauth"]
 	path = modules/oauth
 	url = git://github.com/kohana/oauth.git
